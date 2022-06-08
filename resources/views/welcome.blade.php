@@ -84,7 +84,7 @@
                 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center " id="hero">
                     <div class="col-md-5 p-lg-5 mx-auto my-5 ">
                         <h1 class="display-4 font-weight-normal text-white">MercaAqui</h1>
-                        <p class="lead font-weight-normal text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt totam tempora explicabo ex et corporis, doloribus molestias tenetur esse dignissimos animi illum debitis? Optio suscipit illum accusantium, quaerat reiciendis cumque.</p>
+                        <p class="lead font-weight-normal text-white">hola</p>
                         <a class="btn btn-outline-light capa" href="{{ route('login') }}">Iniciar</a>
                     </div>
                 </div>
