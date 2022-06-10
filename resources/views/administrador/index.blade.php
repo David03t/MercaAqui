@@ -34,7 +34,7 @@
                     <div class="contenedor col">
                         <a href="../productos">
                             <figure>
-                                <img src="/images/productos.jpg">
+                                <img src="/images/Productos.jpg">
                                 <div class="capa">
                                     <h3>Productos</h3>
                                 </div>
