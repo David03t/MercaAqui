@@ -28,10 +28,10 @@ class HomeController extends Controller
     }
     public function productosall()
     {
-        
+        $array = array();
         $resultset=DB::select("SELECT * from productos");
               
-          
-        return $resultset;
+            
+        return json_encode($resultset);
         }
 }
