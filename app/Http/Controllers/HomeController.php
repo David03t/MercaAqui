@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\producto;
+use Illuminate\Support\Facades\DB;
 class HomeController extends Controller
 {
     /**
@@ -25,4 +26,12 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function productosall()
+    {
+        
+        $resultset=DB::select("SELECT * from productos");
+              
+          
+        return $resultset;
+        }
 }
