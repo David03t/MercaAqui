@@ -30,8 +30,8 @@ class HomeController extends Controller
     {
         $array = array();
         $resultset=DB::select("SELECT * from productos");
-              
+        $array= $resultset;
             
-        return json_encode($resultset);
+        return json_encode($array);
         }
 }
