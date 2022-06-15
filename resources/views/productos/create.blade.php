@@ -29,7 +29,7 @@
                 <label for="Imagen" class="form-label">
                     <h3>Imagen</h3>
                 </label>
-                <input type="file" class="form-control" id="Imagen" name="Imagen" placeholder="Ingrese la imagen del producto" value="{{ old('Imagen') }}">
+                <input type="text" class="form-control" id="Imagen" name="Imagen" placeholder="Ingrese la imagen del producto" value="{{ old('Imagen') }}">
             </div>
             <div class="inputCreateProductos">
                 <label for="Descripcion" class="form-label">

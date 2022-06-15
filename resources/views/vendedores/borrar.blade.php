@@ -44,7 +44,7 @@
       </div>
     </div>
   </div>
-    @else 
+    @endelse 
     <div class="container" id="contenerdorgeneralhome">
       <div class="row justify-content-center">
           <div class="col-md-10">

@@ -60,7 +60,6 @@
                     <h6>Producto</h6>
                 </label>
                 <select class="form-select select_venta" name="id_producto" id="id_producto">
-                    <option selected>Seleccione Producto</option>
                     @foreach ($producto as $producto)
                     <option class="form-control" value="  {{ $producto->id }}">{{ $producto->Nombre_producto }}
                     </option>
