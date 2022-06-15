@@ -18,7 +18,7 @@
     <tbody>
       @foreach($producto as $producto)
       <tr >
-        <td ><img src="/images/{{$producto->Imagen}}" alt="imagen del producto" class="imagenesTablas vertical">{{$producto->Nombre_producto}}</td>
+        <td ><img src="{{$producto->Imagen}}" alt="imagen del producto" class="imagenesTablas vertical">{{$producto->Nombre_producto}}</td>
         <td class="text-center vertical">{{$producto->Cantidad}}</td>
         <th class="text-center vertical">{{$producto->id}}</th>
         <td class="text-center vertical">{{$producto->Precio}}</td>
