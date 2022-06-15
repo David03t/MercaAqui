@@ -45,15 +45,15 @@ class productosController extends Controller
         $validData=$request->validate(['Precio'=>'required|numeric']);
         $validData=$request->validate(['Imagen'=>'required']);
         $nuevoproducto= new producto();
-        $imagen=$request->file('Imagen');
-        $nombreimg=time().'.'.$imagen->getClientOriginalExtension();
-        $destino=public_path('images');
-        $request->Imagen->move($destino, $nombreimg);
+        // $imagen=$request->file('Imagen');
+        // $nombreimg=time().'.'.$imagen->getClientOriginalExtension();
+        // $destino=public_path('images');
+        // $request->Imagen->move($destino, $nombreimg);
         $nuevoproducto->Nombre_producto=$request->get('Nombre_producto');
         $nuevoproducto->Descripcion=$request->get('Descripcion');
         $nuevoproducto->cantidad=$request->get('Cantidad');
         $nuevoproducto->Precio=$request->get('Precio');
-        $nuevoproducto->imagen=$nombreimg;
+        $nuevoproducto->imagen=$request->get('Imagen');
         $nuevoproducto->save();
         return redirect('/productos');
     }
@@ -97,15 +97,15 @@ class productosController extends Controller
         $validData=$request->validate(['Precio'=>'required|numeric']);
         $validData=$request->validate(['Imagen'=>'required']);
         $producto=producto::find($id);
-        $imagen=$request->file('Imagen');
-        $nombreimg=time().'.'.$imagen->getClientOriginalExtension();
-        $destino=public_path('images');
-        $request->Imagen->move($destino, $nombreimg);
+        // $imagen=$request->file('Imagen');
+        // $nombreimg=time().'.'.$imagen->getClientOriginalExtension();
+        // $destino=public_path('images');
+        // $request->Imagen->move($destino, $nombreimg);
         $producto->Nombre_producto=$request->get('Nombre_producto');
         $producto->Descripcion=$request->get('Descripcion');
         $producto->cantidad=$request->get('Cantidad');
         $producto->Precio=$request->get('Precio');
-        $producto->imagen=$nombreimg;
+        $producto->imagen=$request->get('Imagen');
         $producto->save();
         return redirect('/productos');
     }
