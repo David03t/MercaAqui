@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\producto;
-use Illuminate\Support\Facades\DB;
+
 class HomeController extends Controller
 {
     /**
@@ -12,14 +11,7 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function productosall()
-    {
-        $array = array();
-        $resultset=DB::select("SELECT * from productos");
-        $array= $resultset;
-            
-        echo json_encode($array);
-        }
+    
     public function __construct()
     {
         $this->middleware('auth');

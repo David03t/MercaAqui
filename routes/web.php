@@ -6,6 +6,7 @@ use App\Http\Controllers\ventasController;
 use App\Http\Controllers\adminController;
 use App\Http\Controllers\vendedorController;
 use App\Http\Controllers\facturacionController;
+use App\Http\Controllers\productosAllController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,7 @@ Route::get('/', function () {
 });
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/productosAll', [App\Http\Controllers\HomeController::class, 'productosAll'])->name('productosAll');
+Route::get('/productosAll', [App\Http\Controllers\productosAllController::class, 'productosAll'])->name('productosAll');
 Route::resource('/productos', productosController::class);
 Route::resource('/ventas', ventasController::class);
 Route::resource('/administrador', adminController::class);
