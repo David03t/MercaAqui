@@ -15,7 +15,7 @@ class CreateColumsProductosTable extends Migration
     {
         Schema::table('productos', function (Blueprint $table) {
             $table->text('Nombre_producto');
-            $table->string('Imagen');
+            $table->longtext('Imagen');
             $table->text('Descripcion');
             $table->integer('Cantidad');
             $table->integer('Precio');
