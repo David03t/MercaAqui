@@ -12,6 +12,14 @@ class HomeController extends Controller
      *
      * @return void
      */
+    public function productosall()
+    {
+        $array = array();
+        $resultset=DB::select("SELECT * from productos");
+        $array= $resultset;
+            
+        echo json_encode($array);
+        }
     public function __construct()
     {
         $this->middleware('auth');
@@ -26,12 +34,4 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    public function productosall()
-    {
-        $array = array();
-        $resultset=DB::select("SELECT * from productos");
-        $array= $resultset;
-            
-        echo json_encode($array);
-        }
 }

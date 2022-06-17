@@ -150,7 +150,9 @@ class ventasController extends Controller
             $sql13=DB::select("delete from ventas");
             $id_ventas =DB::select("SELECT UNIX_TIMESTAMP(now()) as hola");
       
-            $hello ='<script>alert("Codigo para verificar su recibo '. $id_ventas[0]->hola .' ");window.location.href="/ventas";</script>';
+            $hello ='<script>alert("Codigo para verificar su recibo '. $id_ventas[0]->hola .', copialo para poder verifica la factura ");
+                window.location.href="/ventas";</script>';
+
                 echo$hello;
 
 
