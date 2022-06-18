@@ -23,4 +23,12 @@ class productosAllController extends Controller
                 
             echo json_encode($array);
             }
+        public function vendedoresall()
+        {
+            $array = array();
+            $resultset=DB::select("SELECT * FROM users");
+            $array= $resultset;
+                
+            echo json_encode($array);
+            }
 }

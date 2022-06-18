@@ -25,6 +25,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/productosAll', [App\Http\Controllers\productosAllController::class, 'productosAll'])->name('productosAll');
 Route::get('/facturasAll', [App\Http\Controllers\productosAllController::class, 'facturasAll'])->name('facturasAll');
+Route::get('/vendedoresAll', [App\Http\Controllers\productosAllController::class, 'vendedoresAll'])->name('vendedoresAll');
 Route::resource('/productos', productosController::class);
 Route::resource('/ventas', ventasController::class);
 Route::resource('/administrador', adminController::class);
