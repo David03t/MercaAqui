@@ -104,15 +104,15 @@
                     <div class="servicios">
                         <div class="carta">
                             <h3>Productos</h3>
-                            <p>en nuestra app puedes agregar  cualquier tipo de producto enfocado a cualquier negocio o empresa con la mejor velocidad de venta y facil de utilizar garantizando la mejor calidad y seguridad para tus ventas entra y no pieras  </p>
+                            <p>En nuestra app puedes agregar  cualquier tipo de producto enfocado a cualquier negocio o empresa con la mejor velocidad de venta y facil de utilizar garantizando la mejor calidad y seguridad para tus ventas entra y no pieras  </p>
                         </div>
                         <div class="carta">
                             <h3>Vendedores</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
+                            <p>Podras monitorear a tus vendedores, añadirlos y/o modificarlos</p>
                         </div>
                         <div class="carta">
                             <h3>Ventas</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
+                            <p>Aca podras generar las ventas de tu negocio, crear las facuras y modificarlas</p>
                         </div>
                     </div>
                 </div>
