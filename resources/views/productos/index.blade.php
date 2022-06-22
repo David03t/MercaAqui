@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-@can('menuHome')
 <div id="tablaPrincipal">
   <table class="table table-bordered align-middle table-responsive">
     <thead>
@@ -56,32 +55,4 @@
   </div>
   @endcan
 </div>
-@else 
-  <div class="container" id="contenerdorgeneralhome">
-    <div class="row justify-content-center">
-        <div class="col-md-10">
-            <div class="card">
-              <div class="card-header text-center font-weight-bold">
-                <p>acceso denegado para el </p>
-                {{ __('usuario') }} {{ Auth::user()->name }}
-            </div>
-            <div class="row menu">
-                <div class="contenedor col2"  >
-                    <a href="/home" class="">
-                        <figure>
-                            <img src="/images/xxx.png">
-                            <div class="capa">
-                                <h3>Acceso Denegado</h3>
-                            </div>
-                        </figure>
-                    </a>
-                </div>   
-            <div class="card-body">
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-@endcan
 @endsection

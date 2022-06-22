@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\Models\producto;
 
 class productosAllController extends Controller
 {
@@ -31,4 +32,8 @@ class productosAllController extends Controller
                 
             echo json_encode($array);
             }
+            public function indexproducto()
+    {
+        return view('productos.index', ['producto'=>producto::all()]);;
+    }
 }

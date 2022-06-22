@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\ctrl_ventas;
+use App\Models\productos;
 
 class facturacionController extends Controller
 {
@@ -16,6 +17,7 @@ class facturacionController extends Controller
     {
         return view('facturacion.index', ['facturacion'=>ctrl_ventas::all()]);
     }
+    
 
     /**
      * Show the form for creating a new resource.
