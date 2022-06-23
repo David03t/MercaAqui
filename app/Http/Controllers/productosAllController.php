@@ -32,8 +32,5 @@ class productosAllController extends Controller
                 
             echo json_encode($array);
             }
-            public function indexproducto()
-    {
-        return view('productos.index', ['producto'=>producto::all()]);;
-    }
+            
 }
