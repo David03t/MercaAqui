@@ -10432,7 +10432,9 @@ a.text-dark:focus {
     background: white;
     border-radius: 10px;
     border: 1px solid black;
+    min-width: 800px;
 }
+
 .imagenesTablas {
     width: 70px;
     height: 70px;
