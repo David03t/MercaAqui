@@ -133,7 +133,7 @@
                 <h2>Listo para comenzar?</h2>
                 <a href="/login"><button >INICIAR YA!</button></a>
                 <br>
-                <a href="/productos"><button >Productos</button></a>
+                <a href="/productos"><button >Ver Productos</button></a>
             </section>
 
             <footer>
